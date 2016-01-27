@@ -74,13 +74,13 @@ def rows_to_def(rows):
 ##loading data : Make changes here
 
 ##Comment the following three line
-DFrame = sqlContext.read.json("C:/Users/sneha/Desktop/data/decodesaa")
+DFrame = sqlContext.read.json("C:/Users/sneha/Desktop/data/dec_aa")
 DFrame = DFrame.limit(1000)
 #DFrame.cache()
 #load the 6 tables in 6 dataframes and merge into a single one at the end
 ##Uncomment the following lines
 """
-df1 = sqlContext.sql("C:/Users/sneha/Desktop/data/decodesaa")
+df1 = sqlContext.sql("C:/Users/sneha/Desktop/data/dec_aa")
 df2 = sqlContext.sql("C:/Users/sneha/Desktop/data/decodesab")
 df3 = sqlContext.sql("C:/Users/sneha/Desktop/data/decodesac")
 df4 = sqlContext.sql("C:/Users/sneha/Desktop/data/decodesad")
